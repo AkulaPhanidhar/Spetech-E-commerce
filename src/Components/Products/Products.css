@@ -1,0 +1,99 @@
+.featuredProducts {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.productsTitle {
+    font-size: 50px;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.productsDescription {
+    color: gray;
+    font-size: large;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.productsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 270px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    position: relative;
+}
+
+.product:hover {
+    scale: 1.03;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.itemImage {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #f9d6b8;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.itemDescription {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+}
+
+.brandName {
+    font-size: small;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #FF851B;
+}
+
+.itemTitle {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.itemPrice {
+    font-size: small;
+    font-weight: 400;
+}
+
+.addToCart {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #f9d6b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
+}
+
+.addToCart:hover {
+    background: #f8b57b;
+}

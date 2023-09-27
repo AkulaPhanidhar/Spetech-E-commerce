@@ -1,0 +1,81 @@
+.newsLetter {
+    padding: 0px 80px;
+    background: #0C1826;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    background: transparent;
+}
+
+.newsFirstLine {
+    color: #E8EAF0;
+    font-size: xx-large;
+    font-family: 'Rubik';
+    font-weight: 500;
+    background: transparent;
+}
+
+.newsSecondLine {
+    margin: 0;
+    color: #E8EAF0;
+    opacity: 0.9;
+    font-size: small;
+    font-family: 'Roboto';
+    font-weight: 400;
+    background: transparent;
+}
+
+.strongLetter {
+    background: transparent;
+    color: #FF851B;
+}
+
+.newsRight {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.newsInput {
+    padding: 12px 20px;
+    width: 350px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    color: black;
+    font-size: small;
+    font-weight: 400;
+    background: #E8EAF0;
+}
+
+.newsInput::placeholder {
+    color: black;
+    opacity: 0.5;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.newsButton {
+    padding: 12px 20px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: #FF851B;
+    font-size: small;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.newsButton:hover {
+    background: #ff7700;
+}

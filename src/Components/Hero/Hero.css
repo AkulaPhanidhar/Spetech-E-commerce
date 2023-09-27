@@ -1,0 +1,56 @@
+.heroContainer {
+    height: 90vh;
+    background: url("/src/Images/Planet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blackOut {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.line1 {
+    color: #F64377;
+    font-size: 80px;
+    font-weight: 600;
+    background: transparent;
+}
+
+.line2 {
+    color: #E8EAF0;
+    font-size: large;
+    font-weight: 400;
+    background: transparent;
+}
+
+.line3 {
+    color: aqua;
+    font-size: x-large;
+    font-weight: 400;
+    background: transparent;
+}
+
+.button {
+    border: 3px solid #FF851B;
+    padding: 10px 30px;
+    font-size: small;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+
+.button:hover {
+    background: #FF851B;
+    color: black;
+}

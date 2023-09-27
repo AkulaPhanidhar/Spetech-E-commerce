@@ -1,0 +1,93 @@
+.footer {
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#logo {
+    font-size: 40px;
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    background: transparent;
+}
+
+.footerTitle {
+    margin: 15px 0px;
+    color: #F64377;
+    font-size: large;
+    font-family: 'Rubik';
+    font-weight: 500;
+    background: transparent;
+}
+
+.strong2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+}
+
+.leftContent {
+    font-family: 'Rubik';
+    font-size: small;
+    font-weight: 500;
+    margin-right: 5px;
+    background: transparent;
+}
+
+.footerContent {
+    max-width: 400px;
+    color: black;
+    font-size: small;
+    font-weight: 400;
+    cursor: pointer;
+    background: transparent;
+}
+
+.footerContent:hover {
+    color: #FF851B;
+}
+
+#footerContent:hover {
+    color: black;
+}
+
+.iconContainer {
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid #FF851B;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.icon:hover {
+    scale: 1.15;
+}
+
+.iconClass {
+    background: transparent;
+    scale: 1;
+}

@@ -1,0 +1,35 @@
+.outerFeatures {
+    padding: 50px 80px;
+}
+
+.title {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureBox {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.featureTitle {
+    font-size: large;
+    font-weight: 500;
+}
+
+.featureDescription {
+    font-size: small;
+    font-weight: 400;
+}
