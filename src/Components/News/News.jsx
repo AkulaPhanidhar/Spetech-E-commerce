@@ -9,8 +9,8 @@ const News = () => {
           <p className="newsFirstLine">Sign UP for Newsletter</p>
           <p className="newsSecondLine">
             Get E-mail updates about our{" "}
-            <strong className="strongLetter">New Products</strong> and{" "}
-            <strong className="strongLetter">Special Offers</strong>.
+            <span className="strongLetter">New Products</span> and{" "}
+            <span className="strongLetter">Special Offers</span>.
           </p>
         </div>
         <div className="newsRight">

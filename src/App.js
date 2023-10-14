@@ -4,6 +4,7 @@ import Shop from "./Pages/Shop"
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
 import Cart from "./Pages/Cart"
+import View from "./Pages/View"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' element={ <About/> }/>
         <Route path='/contact' element={ <Contact/> }/>
         <Route path='/cart' element={ <Cart/> }/>
+        <Route path='/view' element={ <View/> }/>
       </Routes>
     </BrowserRouter>
     </>

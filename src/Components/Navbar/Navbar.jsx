@@ -52,7 +52,7 @@ const Navbar = (props) => {
                 <PiShoppingCartSimpleFill
                   size={"40px"}
                   style={{ background: "transparent" }}
-                  color="black"
+                  color={active === 5 ? "#FF851B" : "black"}
                 />
               </div>
             </Link>

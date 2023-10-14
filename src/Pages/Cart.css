@@ -1,0 +1,255 @@
+.blank {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartMessege {
+    color: gray;
+    font-size: xx-large;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+#displayCart {
+    display: none;
+}
+
+.cartContainer {
+    position: relative;
+    padding: 30px 80px;
+}
+
+.cartItem {
+    border-right: 6px solid #007bff;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#share {
+    box-shadow: none;
+    border: 1px solid gray;
+    top: 20px;
+    right: 20px;
+}
+
+.cartItemLeft {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartItemRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.cartBrand {
+    font-size: medium;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #FF851B;
+}
+
+.cartTitle {
+    font-size: x-large;
+    font-family: 'Rubik';
+}
+
+#prices {
+    margin-top: 8px;
+}
+
+#itemPrice3 {
+    text-decoration: line-through;
+    font-size: small;
+    color: gray;
+    font-family: 'Rubik';
+}
+
+#itemPrice4 {
+    font-size: large;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.cartButtons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartButton {
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    font-size: small;
+    font-family: 'Rubik';
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartButton:hover {
+    scale: 1.05;
+}
+
+#cartButton1 {
+    color: #E8EAF0;
+    background: black;
+}
+
+#cartButton2 {
+    color: black;
+    background: #FF851B;
+}
+
+#cartButton3 {
+    color: white;
+    background: #F64377;
+}
+
+.line {
+    height: 1.5px;
+    border-radius: 10px;
+    width: 100%;
+    background: gray;
+}
+
+.promoInput {
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: medium;
+    font-family: 'Rubik';
+    color: black;
+    border: none;
+    background: #d6dfe2;
+}
+
+.promoInput::placeholder {
+    color: black;
+    opacity: 0.5;
+    font-size: medium;
+    font-family: 'Rubik';
+}
+
+.promoButton {
+    padding: 10px 20px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: medium;
+    font-family: 'Rubik';
+    color: black;
+    border: none;
+    background: #FF851B;
+}
+
+.invalid {
+    font-size: small;
+    font-family: 'Rubik';
+    color: red;
+    padding: 0px 10px;
+}
+
+.priceLine {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.checkoutButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkoutButton {
+    padding: 11px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+    font-family: 'Rubik';
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    color: black;
+    background: #FF851B;
+}
+
+.checkoutButton:hover {
+    scale: 1.05;
+}
+
+.promoCode {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.codeBox {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.closeButton {
+    transform: translateY(-0.5px);
+}
+
+.promoPrice {
+    width: 100%;
+    text-align: end;
+}
+
+.finalPriceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.priceLineBox {
+    padding: 4px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .popUp {
+    padding: 10px 30px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+} */

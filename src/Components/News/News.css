@@ -37,6 +37,8 @@
 .strongLetter {
     background: transparent;
     color: #FF851B;
+    font-family: 'Rubik';
+    font-weight: 600;
 }
 
 .newsRight {

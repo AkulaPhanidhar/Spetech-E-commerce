@@ -1,0 +1,458 @@
+.viewProduct {
+    padding: 30px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.leftViewContainer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.viewImage {
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 450px;
+    background: #f9d6b8;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.itemImage2 {
+    background: transparent;
+    height: 100%;
+}
+
+.viewSubImages {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.viewSubImage {
+    padding: 10px;
+    height: 85px;
+    width: 85px;
+    border-radius: 15px;
+    background: #f9d6b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease-in-out;
+}
+
+#active2 {
+    border: 3px solid #FF851B;
+}
+
+#active2:hover {
+    scale: 1;
+}
+
+.viewSubImage:hover {
+    scale: 1.1;
+}
+
+.rightViewContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.share {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+.share:hover {
+    background: #f9d6b8;
+    scale: 1.1;
+}
+
+.addUpperContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.addContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.add {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.addNumber {
+    width: 20px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: large;
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.minus, .plus {
+    height: 30px;
+    width: 30px;
+    color: black;
+    font-size: medium;
+    font-family: 'Rubik';
+    font-weight: 500;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.minus:hover, .plus:hover, .heart:hover {
+    scale: 1.1;
+}
+
+.heart {
+    border: none;
+    padding: 13px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.message {
+    font-size: small;
+    font-family: 'Rubik';
+    color: red;
+    cursor: pointer;
+    background: transparent;
+}
+
+.addButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.addButton {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 0px;
+    font-size: medium;
+    font-family: 'Rubik';
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.addButton:hover {
+    scale: 1.03;
+}
+
+#addButton {
+    color: #E8EAF0;
+    background: black;
+}
+
+#buyButton {
+    color: black;
+    background: #FF851B;
+}
+
+#exButton {
+    color: white;
+    background: #F64377;
+}
+
+.itemsDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#brandName {
+    font-size: large;
+    cursor: pointer;
+}
+
+#itemTitle {
+    font-size: xx-large;
+    font-family: 'Rubik';
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.itemSubDescription {
+    text-align: justify;
+    font-size: small;
+    cursor: pointer;
+}
+
+.starContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0px;
+}
+
+#stars {
+    gap: 5px;
+}
+
+.rating {
+    font-family: 'Rubik';
+    color: #007bff;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 2px;
+    transition: 0.1s ease-in-out;
+}
+
+.off {
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Rubik';
+    font-size: small;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: red;
+}
+
+.prices {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#itemPrice1 {
+    text-decoration: line-through;
+    font-size: medium;
+    color: gray;
+    font-family: 'Rubik';
+}
+
+#itemPrice2 {
+    font-size: x-large;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+
+.emi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik';
+    gap: 5px;
+    font-size: small;
+    color: black;
+}
+
+.more {
+    font-family: 'Rubik';
+    cursor: pointer;
+    color: red;
+    transition: 0.1s ease-in-out;
+}
+
+.more:hover {
+    text-decoration: underline;
+}
+
+#display {
+    display: none;
+}
+
+.offersContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.offer {
+    font-family: 'Rubik';
+    font-size: medium;
+    font-weight: 500;
+}
+
+.banks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bank {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+#moreBank {
+    width: 30%;
+}
+
+.bankOffer {
+    font-family: 'Rubik';
+    font-size: medium;
+    font-weight: 500;
+    color: #FF851B;
+}
+
+.subOffer {
+    font-family: 'Rubik';
+    font-size: small;
+}
+
+.more2 {
+    color: gray;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.more2:hover {
+    color: black;
+}
+
+.benifits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.benifit {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+    font-family: 'Rubik';
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #BCD0E5;
+    cursor: pointer;
+}
+
+.details {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.productDetails {
+    font-family: 'Rubik';
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.dtls {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.leftDtls {
+    width: 50%;
+}
+
+.dtlsTitle {
+    padding: 10px 0px;
+    font-size: small;
+    font-family: 'Rubik';
+    font-weight: 500;
+    color: #FF851B;
+    cursor: pointer;
+}
+
+.dtlsValue {
+    padding: 10px 0px;
+    font-size: small;
+    font-family: 'Rubik';
+    cursor: pointer;
+}
