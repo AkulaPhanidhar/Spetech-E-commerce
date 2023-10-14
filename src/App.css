@@ -26,7 +26,6 @@
   color: black;
   font-size: medium;
   font-weight: 400;
-  /* background: #FAFAFA; */
   background: white;
 }
 
@@ -45,7 +44,6 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  /* background: #FF851B; */
   background: linear-gradient(145deg, rgba(249,15,216), 
                                         rgba(245,67,119), 
                                         rgba(252,28,28), 
@@ -53,7 +51,7 @@
                                         rgba(114,251,89));
   background-size: 500%;
   background-position: top left;
-  /* animation: color 10s ease-in-out infinite; */
+  animation: color 10s ease-in-out infinite;
   transition: 0.3s;
 }
 

@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./View.css";
+import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Image from "../Images/Partybox110.png";
+import P2 from "../Images/P2.png";
+import P3 from "../Images/P3.png";
+import P4 from "../Images/P4.png";
 import { BiSolidStar, BiSolidOffer, BiStar } from "react-icons/bi";
 import { BsShieldCheck } from "react-icons/bs";
 import { GrDeliver } from "react-icons/gr";
@@ -18,6 +22,8 @@ import {
 const View = () => {
   const [add, setAdd] = useState(1);
   const [heart, setHeart] = useState(1);
+  const [image, setImage] = useState(1);
+  const [sub, setSub] = useState(Image);
 
   const handleShare = () => {
     navigator
@@ -28,6 +34,26 @@ const View = () => {
       })
       .then(() => console.log("Shared successfully"))
       .catch((error) => console.error("Error sharing:", error));
+  };
+
+  const changeImage1 = () => {
+    setImage(1);
+    setSub(Image);
+  };
+
+  const changeImage2 = () => {
+    setImage(2);
+    setSub(P2);
+  };
+
+  const changeImage3 = () => {
+    setImage(3);
+    setSub(P3);
+  };
+
+  const changeImage4 = () => {
+    setImage(4);
+    setSub(P4);
   };
 
   let minus = () => {
@@ -42,6 +68,10 @@ const View = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navbar number={6} />
@@ -53,20 +83,60 @@ const View = () => {
       <div className="viewProduct">
         <div className="leftViewContainer">
           <div className="viewImage">
-            <img src={Image} alt="" className="itemImage2" />
+            <img src={sub} alt="" className="itemImage2" />
           </div>
           <div className="viewSubImages">
-            <div className="viewSubImage">
+            <div
+              className="viewSubImage"
+              onClick={changeImage1}
+              id={`${image === 1 ? "active2" : ""}`}
+            >
               <img src={Image} alt="" className="itemImage2" />
             </div>
-            <div className="viewSubImage">
-              <img src={Image} alt="" className="itemImage2" />
+            <div
+              className="viewSubImage"
+              onClick={changeImage2}
+              id={`${image === 2 ? "active2" : ""}`}
+            >
+              <img src={P2} alt="" className="itemImage2" />
             </div>
-            <div className="viewSubImage">
-              <img src={Image} alt="" className="itemImage2" />
+            <div
+              className="viewSubImage"
+              onClick={changeImage3}
+              id={`${image === 3 ? "active2" : ""}`}
+            >
+              <img src={P3} alt="" className="itemImage2" />
             </div>
-            <div className="viewSubImage">
-              <img src={Image} alt="" className="itemImage2" />
+            <div
+              className="viewSubImage"
+              onClick={changeImage4}
+              id={`${image === 4 ? "active2" : ""}`}
+            >
+              <img src={P4} alt="" className="itemImage2" />
+            </div>
+          </div>
+
+          <div className="details">
+            <p className="productDetails">Product Specifications</p>
+            <div className="dtls">
+              <div className="leftDtls">
+                <p className="dtlsTitle">Weight :</p>
+                <p className="dtlsTitle">RMS Output :</p>
+                <p className="dtlsTitle">Frequency response :</p>
+                <p className="dtlsTitle">Connectivity :</p>
+                <p className="dtlsTitle">Bluetooth Varsion :</p>
+                <p className="dtlsTitle">Audio Codac :</p>
+                <p className="dtlsTitle">IP Rating :</p>
+              </div>
+              <div className="rightDtls">
+                <p className="dtlsValue">10 Kg's</p>
+                <p className="dtlsValue">160 Watts</p>
+                <p className="dtlsValue">45 Hz - 20 KHz</p>
+                <p className="dtlsValue">Bluetooth, AirPlay, USB</p>
+                <p className="dtlsValue">5.0</p>
+                <p className="dtlsValue">AAC, SBC, LDAC</p>
+                <p className="dtlsValue">IPX4 Rated</p>
+              </div>
             </div>
           </div>
         </div>
@@ -83,11 +153,11 @@ const View = () => {
               Partybox 110
             </p>
             <p className="itemSubDescription">
-              With Bass Boost and loud, powerful JBL Original Pro Sound, your
-              friends won't just hear the music, they'll feel it as 12 hours of
-              playtime keeps the party rocking all day or night. Use the
-              PartyBox app for total control as you stream your tunes
-              wirelessly.
+              Pumping out 160 Watts, the JBL PartyBox 110 brings you JBL
+              Original Pro Sound that makes your music amazing with two levels
+              of Deep and adjustable Bass. With Colors synched to the Beat and
+              with Customizable Strobes and Patterns that dazzle your eyes,
+              party with an unique, immersive Audiovisual experience.
             </p>
             <div className="starContainer">
               <div className="stars" id="stars">
@@ -101,12 +171,8 @@ const View = () => {
             </div>
             <div className="off">Special Deal of 20% off</div>
             <div className="prices">
-              <p className="itemPrice" id="itemPrice1">
-                ₹ 29,999
-              </p>
-              <p className="itemPrice" id="itemPrice2">
-                ₹ 23,999
-              </p>
+              <p id="itemPrice1">₹ 29,999</p>
+              <p id="itemPrice2">₹ 23,999</p>
             </div>
             <p className="emi">
               or From ₹4,829/Month with no cost EMI.{" "}
@@ -186,9 +252,11 @@ const View = () => {
           </div>
 
           <div className="addButtons">
-            <button className="addButton" id="addButton">
-              Add to Cart
-            </button>
+            <Link to={"/cart"} style={{ width: "100%" }}>
+              <button className="addButton" id="addButton">
+                Add to Cart
+              </button>
+            </Link>
             <button className="addButton" id="buyButton">
               Buy Now
             </button>
